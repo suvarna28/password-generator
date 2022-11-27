@@ -54,7 +54,7 @@ function generatePassword() {
 
     if(!specialCharsY && !numbersY && !capitalLettersY && !smallLettersY){
       alert("Please select atleast one criteria to create a password.");
-      return;
+      return "";
     }
 
     /* Code to check which criterias were selected and then to build a final array containing all those values */
@@ -83,7 +83,7 @@ function generatePassword() {
       }
     } else {
       alert("Password should be atleast 8 characters long and less than 128 characters");
-      return;  
+      return "";  
     }  
     return finalPwd;
 }
